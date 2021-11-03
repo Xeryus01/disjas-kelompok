@@ -19,6 +19,10 @@ data1 <- read_csv(myfile)
 data1$tanggal <- as.Date(data1$tanggal, "%m/%d/%Y")
 
 fluidPage(
+  div(titlePanel("Tugas Kelompok 10 - 4SI2"), style="text-align: center;"),
+  div(h4("Akhmad Fadil Mubarok (221810129) dan Muhammad Yasin Vidian (221810477)"), style="text-align: center;"),
+  hr(),
+  
   h1("Static Line Chart"),
   dateInput("plotFrom", "From:", value = "2016-01-04", min = "2016-01-04", max = "2021-08-31",format = "mm/dd/yyyy"),
   dateInput("plotTo", "To:", value = "2021-08-31", min = "2016-01-04", max = "2021-08-31", format = "mm/dd/yyyy"),
